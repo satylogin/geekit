@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang = "en">
+	<head>
+		<title> GEEKIT </title>
+		<meta charset = "utf-8" />
+	</head>
+
+	<body>
+		<div id = "main_wrapper">
+			<div id = "header">
+				<h2> GEEKIT </h2>
+				<h3> A place to start learning.... </h3>
+				<hr>
+			</div>
+
+			<div id = "content">
+
+				<h4>Data Types in C</h4><br>
+
+				<p> 
+					C language is a bit rich in terms of data types. We have a lot of data types.
+					But we must first define what a data type is. To understand it in basic form,
+					think of data types as a set of finite values with a set of operations that 
+					can be performed on those values. Some
+
+					They are - <br>
+					<ul>
+						<li>Integer</li>
+						<li>Short Integer</li>
+						<li>Long Integer</li>
+						<li>Long Long Integer</li>
+						<li>Float</li>
+						<li>Double</li>
+						<li>Long Double</li>
+						<li>Character</li>
+					</ul>
+				</p><hr>
+
+				<p>
+					<h4>int (Integer), short int (Short Integer), long int (Long Integer), 
+					long long int (Long Long Integer)</h4>
+
+					int is the most basic data type in C language. A common mistake is to learn the size
+					of data types. actually the size of data types depend on your system and not the 
+					language you use. in a 64 bit architecture, genarally an int is of 4 bytes, a short
+					int is of 2 bytes, a long int is of 4 or 8 bytes, and a long long int is of 8 bytes.
+					The general rule to remember is, a short int cannot be larger than an int. An int cannot
+					be larger than a long int. A long int cannot be larger than an long long int. <br>
+
+					So let us write a code to see the size of these data types in the system. <br><br>
+
+					<img src="images/size_int.png" /> <br><br>
+					Output looks like <br>
+					<img src="images/size_int_out.png" /> <br><br>
+
+					The range of values that an these data types can store is -2 ^ (sizeof(data type) - 1) to 
+					+ 2 ^ (sizeof(data type) - 1) - 1 . The symbol ^ stands for power<br>
+					The values that they store is integer. eg -2, -467838, 0, 478229, 10, 4 etc. <br><br>
+				</p><hr>
+
+				<p>
+					<h4>float (Float), double (Double), long double (Long Double)</h4>
+
+					They are used to store large data values. They are also used to store fractional
+					values. But they have precision problem. To understan this, let us first look 
+					at their size. <br><br>
+
+					<img src="images/size_float.png"> <br><br>
+					Output looks like <br>
+					<img src="images/size_float_out.png"> <br><br>
+
+					Now it is common sense to understand why they loose pescision. The size of float is also
+					4 bytes, but it can store larger values. This is by making compromise with the precision.
+					You will learn about it more in your computer architecture classes.
+				</p><hr>
+
+				<p>
+					<h4>char (Character)</h4>
+					It is used to store a single character.<br><br>
+
+					<img src="images/size_char.png"> <br><br>
+					Output looks like <br>
+					<img src="images/size_char_out.png"> <br><br>
+
+					This was just a little introduction to data types to get you started. For reference
+					visit <br><br>
+
+					<a href="https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf"> data types1 </a>
+					<br><br><a href="https://en.wikipedia.org/wiki/C_data_types">Data Types 2</a>
+				</p><hr>
+			</div>
+		</div>
+	</body>
+</html>
